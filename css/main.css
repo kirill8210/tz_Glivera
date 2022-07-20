@@ -10,24 +10,24 @@
     --background_panel: #1D1C1C;
 }
 
-#messages{
+#messages {
     background: var(--background_section);
     padding: 35px 0;
 }
 
-.messages{
+.messages {
     display: flex;
     gap: 57px;
 }
 
-.panel{
+.panel {
     font-size: 16px;
     line-height: 22px;
     color: var(--color_white);
     width: 220px;
 }
 
-.panel_photo{
+.panel_photo {
     position: relative;
     width: 220px;
     height: 293px;
@@ -35,7 +35,7 @@
     border: 1px solid var(--color_accent);
 }
 
-.panel_photo span{
+.panel_photo span {
     position: absolute;
     top: 20px;
     left: 20px;
@@ -44,7 +44,7 @@
     height: 13px;
 }
 
-.panel_photo > svg{
+.panel_photo > svg {
     position: absolute;
     left: -55px;
     top: -1px;
@@ -52,40 +52,40 @@
     min-width: 293px;
 }
 
-.panel_msg{
+.panel_msg {
     font-family: 'Circe-Bold', sans-serif;
     background: var(--background_panel);
     color: var(--color_accent);
     padding: 51px 30px;
 }
 
-.panel_msg div{
+.panel_msg div {
     display: flex;
     justify-content: space-between;
     cursor: pointer;
 }
 
-.panel_user{
+.panel_user {
     background: var(--background_panel);
     padding: 50px 30px;
     border-top: 1px solid var(--color_dark_grey);
     border-bottom: 1px solid var(--color_dark_grey);
 }
 
-.panel_user .user{
+.panel_user .user {
     margin-bottom: 21px;
 }
 
-.panel_questions{
+.panel_questions {
     background: var(--background_panel);
     padding: 51px 30px;
 }
 
-.panel_questions .questions{
+.panel_questions .questions {
     margin-bottom: 21px;
 }
 
-.panel_buy{
+.panel_buy {
     background: var(--color_accent);
     color: var(--color_white);
     font-family: 'Circe-Bold', sans-serif;
@@ -93,23 +93,23 @@
     text-align: center;
 }
 
-.panel_user a, .panel_questions a, .panel_buy a{
+.panel_user a, .panel_questions a, .panel_buy a {
     transition: color 0.3s ease-in;
 }
 
-.panel_user a:hover, .panel_questions a:hover{
+.panel_user a:hover, .panel_questions a:hover {
     color: var(--color_accent);
 }
 
-.panel_buy a:hover{
+.panel_buy a:hover {
     color: var(--color_dark_grey);
 }
 
-.msg{
+.msg {
     width: 100%;
 }
 
-.msg_menu{
+.msg_menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -117,42 +117,42 @@
     margin-bottom: 15px;
 }
 
-.action{
+.action {
     display: flex;
     gap: 20px;
     width: 275px;
     cursor: pointer;
 }
 
-.action_delete{
+.action_delete {
     color: var(--color_red);
 }
 
-.action_archive{
+.action_archive {
     color: var(--color_white);
 }
 
-.status{
+.status {
     display: flex;
     gap: 20px;
     cursor: pointer;
 }
 
-.status_noread{
+.status_noread {
     color: var(--color_accent);
 }
 
-.status_archive{
+.status_archive {
     color: var(--color_grey);
 }
 
-.search{
+.search {
     position: relative;
     padding-left: 102px;
     margin-left: auto;
 }
 
-.search input{
+.search input {
     height: 30px;
     width: 168px;
     padding-left: 5px;
@@ -161,7 +161,7 @@
     border: 1px solid var(--color_accent);
 }
 
-.search label{
+.search label {
     position: absolute;
     right: 10px;
     top: 5px;
@@ -169,15 +169,15 @@
     color: var(--color_accent);
 }
 
-input:focus ~ label,label:active{
+input:focus ~ label,label:active {
     display: none;
 }
 
-.msg_list{
+.msg_list {
     width: 100%;
 }
 
-.msg_item a{
+.msg_item a {
     display: flex;
     justify-content: start;
     align-items: center;
@@ -190,35 +190,35 @@ input:focus ~ label,label:active{
     cursor: pointer;
 }
 
-.msg_item a:first-child{
+.msg_item a:first-child {
     border-top: 1px solid var(--color_lite_grey);
 }
 
-.msg_item a:hover{
+.msg_item a:hover {
     border-top: 1px solid var(--color_accent);
     border-bottom: 1px solid var(--color_accent);
 }
 
-.msg_status{
+.msg_status {
     display: flex;
     justify-content: space-between;
 }
 
-.msg_status label{
+.msg_status label {
     display: flex;
     justify-content: space-between;
     position: relative;
     cursor: pointer;
 }
 
-.msg_status label input[type=checkbox] {
+.msg_status label input[type=checkbox]  {
     position: absolute;
     opacity: 0;
     width: 0;
     height: 0;
 }
 
-.msg_status label span {
+.msg_status label span  {
     margin-top: -2px;
     width: 16px;
     height: 16px;
@@ -226,12 +226,12 @@ input:focus ~ label,label:active{
     transition: .3s background-color;
 }
 
-.msg_status label span:after {
+.msg_status label span:after  {
     content: "";
     position: absolute;
     display: none;
     left: 6px;
-    top: 4px;
+    top: 2px;
     width: 4px;
     height: 6px;
     border: solid #fff;
@@ -239,11 +239,11 @@ input:focus ~ label,label:active{
     transform: rotate(45deg);
 }
 
-.msg_status label input:checked ~ span:after {
+.msg_status label input:checked ~ span:after  {
     display: block;
 }
 
-.msg_img{
+.msg_img {
     position: relative;
     width: 70px;
     height: 59px;
@@ -251,18 +251,18 @@ input:focus ~ label,label:active{
     margin-left: 5px;
 }
 
-.msg_img svg{
+.msg_img svg {
     position: absolute;
     top: -5.5px;
     min-height: 59px;
     min-width: 70px;
 }
 
-.msg_img span{
+.msg_img span {
     display: none;
 }
 
-.msg_img_active span{
+.msg_img_active span {
     display: flex;
     position: absolute;
     top: 9px;
@@ -273,7 +273,7 @@ input:focus ~ label,label:active{
     background: var(--color_green);
 }
 
-.msg_name{
+.msg_name {
     display: flex;
     align-items: center;
     font-family: 'Circe-Bold', sans-serif;
@@ -286,7 +286,7 @@ input:focus ~ label,label:active{
     color: var(--color_white);
 }
 
-.msg_name span{
+.msg_name span {
     position: relative;
     display: inline-block;
     text-overflow: ellipsis;
@@ -294,7 +294,7 @@ input:focus ~ label,label:active{
     white-space: nowrap;
 }
 
-.msg_name span:before{
+.msg_name span:before {
     content: "";
     position: absolute;
     bottom: 3px;
@@ -303,20 +303,20 @@ input:focus ~ label,label:active{
     background: var(--color_white);
 }
 
-.msg_status_noread{
+.msg_status_noread {
     width: 52px;
     padding: 0 16px 0 21px;
 }
 
-.msg_status_noread svg{
+.msg_status_noread svg {
     display: none;
 }
 
-.msg_status_noread_active svg{
+.msg_status_noread_active svg {
     display: flex;
 }
 
-.msg_text{
+.msg_text {
     position: relative;
     color: var(--color_grey);
     margin-right: auto;
@@ -328,7 +328,7 @@ input:focus ~ label,label:active{
     margin-top: 0px;
 }
 
-.msg_text:before{
+.msg_text:before {
     content: "";
     position: absolute;
     width: 100%;
@@ -336,7 +336,7 @@ input:focus ~ label,label:active{
     background-image: linear-gradient(90deg, rgba(21,21,21,0.0) 0%, rgba(21,21,21,1) 100%);
 }
 
-.msg_date{
+.msg_date {
     display: flex;
     justify-content: end;
     width: 168px;
@@ -345,27 +345,27 @@ input:focus ~ label,label:active{
     color: var(--color_grey);
 }
 
-.time{
+.time {
     margin-left: 20px;
 }
 
-.msg_item_active .msg_text, .msg_item_active .msg_date{
+.msg_item_active .msg_text, .msg_item_active .msg_date {
     color: var(--color_white);
 }
 
-.msg_item_active .msg_text:before{
+.msg_item_active .msg_text:before {
     right: 0;
     width: 50%;
 }
 
-.msg_pagination{
+.msg_pagination {
     display: flex;
     justify-content: end;
     align-items: center;
     margin-top: 50px;
 }
 
-.msg_pagination a{
+.msg_pagination a {
     display: flex;
     justify-content: center;
     color: var(--color_white);
@@ -374,29 +374,51 @@ input:focus ~ label,label:active{
     margin-right: 10px;
 }
 
-.msg_pagination a:last-child{
+.msg_pagination a:last-child {
     margin-right: 0;
 }
 
-.active_list{
+.active_list {
     color: var(--color_accent)!important;
     border: 1px solid var(--color_accent);
     border-radius: 50%;
 }
 
-.msg_pagination .active_list{
+.msg_pagination .active_list {
     font-family: 'Circe-Bold', sans-serif;
     margin-right: 9px!important;
 }
 
-.more_list{
+.more_list {
     width: 12px!important;
     margin-left: 5px;
     margin-right: 16px!important;
 }
 
-.next_list{
+.next_list {
     margin-left: 10px;
     width: 50px!important;
+}
+
+.icon-menu {
+    display: none;
+}
+
+.icon-close {
+    display: none;
+}
+
+.icon-menu {
+    width: 40px;
+}
+
+.icon-menu img {
+    width: 30px;
+    height: 26px;
+    margin-top: 2px;
+}
+
+.icon-close {
+    width: 30px;
 }
 
